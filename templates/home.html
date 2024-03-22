@@ -8,7 +8,27 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     
     <style>
-        @keyframes slideIn {
+            .sliding-image {
+                display: inline-block;
+                animation: slide 4s linear infinite; 
+                width: 400px; 
+            }
+            
+            .sliding-image img {
+                width: 100%;
+                height: 148px;
+            }
+            
+            .sliding-image:nth-child(1) {
+                animation-delay: 0s; /* Delay the animation for the second image by 2 seconds */
+            }
+            
+            
+            .sliding-image:nth-child(2) {
+                animation-delay: 1s; /* Delay the animation for the second image by 2 seconds */
+            }
+
+/*         @keyframes slideIn {
             0% {
                 opacity: 0;
                 transform: translateX(-50px);
@@ -16,7 +36,7 @@
             100% {
                 opacity: 1;
                 transform: translateX(0);
-            }
+            } */
         }
 
         .animated-list {
